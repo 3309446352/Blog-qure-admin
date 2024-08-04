@@ -69,7 +69,7 @@
         </el-menu-item>
 
         <el-menu-item index="6">
-          <el-icon style="width: 40px;height: 40px"><img src="../assets/user.jpg" alt=""></el-icon>
+          <el-icon style="width: 60px;height: 70px"><img src="../assets/GH.jpg" alt=""></el-icon>
           <span><router-link to="User">用户界面</router-link></span>
         </el-menu-item>
       </el-menu>
