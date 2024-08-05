@@ -9,13 +9,13 @@
         <h1>Pure-admin</h1>
         <div class="login-auto">
           <el-form-item>
-          <el-input v-model="username" placeholder="请输入用户名" clearable></el-input>
+          <el-input type="" v-model="username" placeholder="请输入用户名" show-password clearable></el-input>
         </el-form-item>
         <el-form-item>
-          <el-input v-model="userpassword" placeholder="请输入密码" show-password clearable></el-input>
+          <el-input type="password" v-model="userpassword" placeholder="请输入密码" show-password clearable></el-input>
         </el-form-item>
         <el-form-item>
-          <el-button type="primary" style="width: 100%;">登录</el-button>
+          <el-button type="primary" style="width: 100%;" @click="login()">登录</el-button>
         </el-form-item>
           <el-divider>
             第三方登录
@@ -80,4 +80,13 @@ definePageMeta({
 })
 const username = ref('')
 const userpassword = ref('')
+const router = useRouter()
+const login = () => {
+  if(username.value === 'admin' || userpassword.value === '0'){
+    alert('登录成功')
+    router.push('/')
+  }
+
+  // router.push('/Editor')
+}
 </script>
