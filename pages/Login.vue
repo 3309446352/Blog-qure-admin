@@ -1,7 +1,10 @@
 <template>
   <div class="flex flex-row ...">
+
       <div class="left-img">
-        <img src="/assets/GH.jpg" alt="">
+        <el-card shadow="always">
+          <img src="/assets/GH.jpg" alt="">
+        </el-card>
       </div>
       <div class="right-text">
 
@@ -37,34 +40,33 @@
 </template>
 
 <style scoped lang="less">
-.img1{
-  position: absolute;
-  top: 20%;
-}
-.left-img{
+.flex{
   background-color: #999999;
-  width: 50%;
-  height: 700px;
-  padding: 90px 20px 100px;
-  img{
-    width: 100%;
-    border-radius: 10px;
+  .left-img{
+    //background-color: #999999;
+    width: 50%;
+    height: 700px;
+    padding: 90px 20px 100px;
+    img{
+      width: 100%;
+      border-radius: 10px;
+    }
   }
-}
-.right-text{
-  //background-color: blueviolet;
-  width: 50%;
-  height: 150%;
-  h1{
-    font-size: 50px;
-    color: #999999;
-    margin-top: 100px;
-    text-align: center;
-  }
-  .login-auto{
-    width: 70%;
-    // background-color: blue;
-    margin: auto;
+  .right-text{
+    //background-color: blueviolet;
+    width: 50%;
+    height: 150%;
+    h1{
+      font-size: 50px;
+      //color: #999999;
+      margin-top: 100px;
+      text-align: center;
+    }
+    .login-auto{
+      width: 70%;
+      // background-color: blue;
+      margin: auto;
+    }
   }
 }
 </style>
