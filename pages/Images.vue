@@ -71,5 +71,8 @@ const tableData = [
     address: 'No. 189, Grove St, Los Angeles',
     zip: 'CA 90036',
   },
-]
+];
+definePageMeta(
+    { title: '图片' }
+)
 </script>

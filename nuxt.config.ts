@@ -7,7 +7,7 @@ export default defineNuxtConfig({
     'element-plus/dist/index.css',
   ],
     plugins: [
-        { src: '~/plugins/element-plus.client.ts' },
+        { src: '~/plugins/element-plus.client.ts'},
     ],
   modules: ['@nuxtjs/tailwindcss'],
 })

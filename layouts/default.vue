@@ -6,10 +6,8 @@
         <el-header>
           <Breadcrumb/>
         </el-header>
-        <el-main>
-          <Window>
+        <el-main style="margin: 10px 10px 10px 10px">
             <slot />
-          </Window>
         </el-main>
         <el-footer>
           <h2> 版权所有 © 2020-present PureAdmin</h2>
@@ -29,4 +27,8 @@ h2{
 <script setup lang="ts">
 import Breadcrumb from "~/components/Breadcrumb.vue";
 import CollapseMenu from "~/components/Collapse-menu.vue";
+
+definePageMeta({
+  layout: "default",
+})
 </script>

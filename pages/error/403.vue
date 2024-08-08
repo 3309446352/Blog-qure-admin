@@ -5,12 +5,14 @@ import noAccess from "@/assets/status/403.svg?component";
 defineOptions({
   name: "403"
 });
-
+definePageMeta(
+    { title: '403' }
+)
 const router = useRouter();
 </script>
 
 <template>
-  <div>
+  <window>
     <svg width="251" height="294">
       <g fill="none">
         <path fill="#E4EBF7"
@@ -139,5 +141,5 @@ const router = useRouter();
         返回首页
       </el-button>
     </div>
-  </div>
+  </window>
 </template>

@@ -36,6 +36,7 @@
   top: 10px;
   border-radius: 20px;
   overflow: hidden;
+  margin: 0 auto;
 }
 .b{
   position: absolute;
@@ -123,5 +124,7 @@
 }
 </style>
 <script>
-
+definePageMeta(
+    { title: '用户' }
+)
 </script>

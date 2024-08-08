@@ -4,7 +4,9 @@ import { useRouter } from "vue-router";
 defineOptions({
   name: "404"
 });
-
+definePageMeta(
+    { title: '404' }
+)
 const router = useRouter();
 </script>
 

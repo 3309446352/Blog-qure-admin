@@ -26,10 +26,13 @@
 
 </style>
 
-<script >
+<script setup>
 import {defineComponent} from 'vue'
 
-export default defineComponent({
+defineComponent({
   name: "Timeline"
 })
+definePageMeta(
+    { title: '时间戳' }
+)
 </script>

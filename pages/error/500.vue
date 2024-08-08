@@ -4,7 +4,9 @@ import { useRouter } from "vue-router";
 defineOptions({
   name: "500"
 });
-
+definePageMeta(
+    { title: '500' }
+)
 const router = useRouter();
 </script>
 
